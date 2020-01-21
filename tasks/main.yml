@@ -1,0 +1,56 @@
+---
+- name: resolve platform specific vars
+  include_vars: '{{ item }}'
+  with_first_found:
+    - files:
+        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
+        - '{{ ansible_distribution }}.yml'
+        - '{{ ansible_os_family }}.yml'
+      skip: true
+      paths:
+        - '{{ role_path }}/vars'
+- name: look for secrethub {{ secrethub_ver }} install...
+  become: yes
+  stat:
+    path: '{{ secrethub_install_dir }}'
+  changed_when: False
+  register: secrethub_binary
+- when: not secrethub_binary.stat.exists
+  block:
+    - name: download secrethub {{ secrethub_download }}...
+      become: yes
+      become_user: root
+      get_url:
+        url: '{{ secrethub_url }}'
+        dest: /tmp/{{ secrethub_archive }}
+        mode: 0644
+        checksum: '{{ secrethub_checksum }}'
+    - name: mkdir {{ secrethub_install_dir }}...
+      become: yes
+      become_user: root
+      file:
+        path: '{{ secrethub_install_dir }}'
+        mode: 0755
+        state: directory
+    - name: unarchive...
+      become: yes
+      become_user: root
+      unarchive:
+        remote_src: yes
+        src: /tmp/{{ secrethub_archive }}
+        dest: '{{ secrethub_install_dir }}'
+        creates: '{{ secrethub_exe }}'
+  always:
+    - name: cleanup...
+      become: yes
+      become_user: root
+      file:
+        path: /tmp/{{ secrethub_archive }}
+        state: absent
+- name: link...
+  become: yes
+  become_user: root
+  file:
+    src: '{{ secrethub_exe }}'
+    dest: '{{ secrethub_link }}'
+    state: link
