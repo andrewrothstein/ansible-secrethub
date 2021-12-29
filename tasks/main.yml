@@ -9,46 +9,46 @@
       skip: true
       paths:
         - '{{ role_path }}/vars'
-- name: look for secrethub {{ secrethub_ver }} install...
-  become: yes
+- name: look for secrethub install in {{ secrethub_install_dir }}...
+  become: true
   stat:
     path: '{{ secrethub_install_dir }}'
-  changed_when: False
+  changed_when: false
   register: secrethub_binary
 - when: not secrethub_binary.stat.exists
   block:
-    - name: download secrethub {{ secrethub_download }}...
-      become: yes
+    - name: downloading {{ secrethub_url }} to {{ secrethub_tmp_archive }}
+      become: true
       become_user: root
       get_url:
         url: '{{ secrethub_url }}'
-        dest: /tmp/{{ secrethub_archive }}
+        dest: '{{ secrethub_tmp_archive }}'
         mode: 0644
         checksum: '{{ secrethub_checksum }}'
     - name: mkdir {{ secrethub_install_dir }}...
-      become: yes
+      become: true
       become_user: root
       file:
         path: '{{ secrethub_install_dir }}'
         mode: 0755
         state: directory
-    - name: unarchive...
-      become: yes
+    - name: unarchiving {{ secrethub_tmp_archive }} to {{ secrethub_install_dir }}
+      become: true
       become_user: root
       unarchive:
-        remote_src: yes
-        src: /tmp/{{ secrethub_archive }}
+        remote_src: true
+        src: '{{ secrethub_tmp_archive }}'
         dest: '{{ secrethub_install_dir }}'
         creates: '{{ secrethub_exe }}'
   always:
-    - name: cleanup...
-      become: yes
+    - name: rm {{ secrethub_tmp_archive }}
+      become: true
       become_user: root
       file:
-        path: /tmp/{{ secrethub_archive }}
+        path: '{{ secrethub_tmp_archive }}'
         state: absent
-- name: link...
-  become: yes
+- name: linking {{ secrethub_link }} to {{ secrethub_exe }}
+  become: true
   become_user: root
   file:
     src: '{{ secrethub_exe }}'

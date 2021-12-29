@@ -1,7 +1,8 @@
 ---
 # vars file for secrethub
 secrethub_platform: '{{ secrethub_os }}-{{ secrethub_arch }}'
-secrethub_archive: 'secrethub-{{ secrethub_ver }}-{{ secrethub_platform }}.{{ secrethub_archive_type | default("tar.gz") }}'
+secrethub_archive: secrethub-{{ secrethub_ver }}-{{ secrethub_platform }}.{{ secrethub_archive_type | default("tar.gz") }}
+secrethub_tmp_archive: /tmp/{{ secrethub_archive }}
 secrethub_url: '{{ secrethub_mirror }}/{{ secrethub_ver }}/{{ secrethub_archive }}'
 secrethub_checksum: '{{ secrethub_checksums[secrethub_ver][secrethub_platform] }}'
 
