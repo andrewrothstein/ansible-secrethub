@@ -1,6 +1,6 @@
 ---
 # defaults file for secrethub
-secrethub_ver: v0.37.0
+secrethub_ver: v0.43.0
 secrethub_mirror: https://github.com/secrethub/secrethub-cli/releases/download
 secrethub_os: linux
 secrethub_arch: amd64
@@ -27,6 +27,46 @@ secrethub_checksums:
     windows-386: sha256:327c16442a003280564bd11f8deb6cd4465991d6fdb0bdd70887f9e1825556c8
     # https://github.com/secrethub/secrethub-cli/releases/download/v0.33.0/secrethub-v0.33.0-windows-amd64.zip
     windows-amd64: sha256:08fea5cf1cee281b2d568af7e3ac315d0f237365cae4c68a0af49fbd71ac772f
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-checksums.txt
+  v0.34.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:fd008cf45bd07fb407cf7f16e1e779976e8b6f4a8d7a9d5efa3163ba60e12eb1
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-386.tar.gz
+    linux-386: sha256:9abda12fd3c0ed69016f57e539013deb33ed287d0b52e1ad64c93d490ea38947
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-amd64.tar.gz
+    linux-amd64: sha256:eb8ecfd2d55ef0a6d44a0f768ea463bd5f0f1ebffa2186a48b6836c8561f2b7c
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-arm64.tar.gz
+    linux-arm64: sha256:917fbde12b83d99f881db30e02bf289a718cca6c3f9a9a21ba05514aa6e44081
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-armv5.tar.gz
+    linux-armv5: sha256:54e34fc988498284d2a85c97247113dd4cebdeeb3b45a2b2f4e38f2b423cd874
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-armv6.tar.gz
+    linux-armv6: sha256:9efba08ec7f2a70feacf5031357b09be9b2a8afefe9896bc56d7f8e77a737d23
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-linux-armv7.tar.gz
+    linux-armv7: sha256:621436e01383c63b9829164ce8c4df2b6085c868ef33ae5a68dfc6c6cab40c15
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-windows-386.zip
+    windows-386: sha256:bc4d81266083a8de0717ac2e31cf3d045deed2cf7d2c432f5db13f1401c01d14
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.34.0/secrethub-v0.34.0-windows-amd64.zip
+    windows-amd64: sha256:63526f753016fb66889eefa022b286b78f8f6bb0ba083775c7b67618f0673bfe
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-checksums.txt
+  v0.35.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:121be86a05325abbbb97207725dbf5dd66848b687e2031279c8b8b3754c57f69
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-386.tar.gz
+    linux-386: sha256:f5e559a597f988d5a5b2c588e2a4fac09fe49c61822c0a022d3fec3d4483be2c
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-amd64.tar.gz
+    linux-amd64: sha256:9dd331b7bc2e7b88850f1e4acd2c796135e93b422a06f439368a17ce33a0a8c1
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-arm64.tar.gz
+    linux-arm64: sha256:0fe64bcd9c928a15785a7f0ae5c1be95fc0354bee0042c1d66d186675090d290
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-armv5.tar.gz
+    linux-armv5: sha256:0fa10e8bf47602e170d9a37d7ed175fde172f4a312e289dae08766e2d7640f11
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-armv6.tar.gz
+    linux-armv6: sha256:642894ea9beb9101c7a2b10a04b99902797b391da1a9ae3020de5504e76d6a17
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-linux-armv7.tar.gz
+    linux-armv7: sha256:be8f53b8f16518da3b2bb29775a58b9583f13a1f1608e45b0fd0191194e5ee2c
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-windows-386.zip
+    windows-386: sha256:61c2bc457c4bd8633efe5a2393918e1f1302cd5b9146573a8241467346ab5b77
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.35.0/secrethub-v0.35.0-windows-amd64.zip
+    windows-amd64: sha256:a8f161dfc7497cc244e81d31a41a0f41b70aa10074ca280078f4229dce1338f1
   # https://github.com/secrethub/secrethub-cli/releases/download/v0.36.0/secrethub-v0.36.0-checksums.txt
   v0.36.0:
     # https://github.com/secrethub/secrethub-cli/releases/download/v0.36.0/secrethub-v0.36.0-darwin-amd64.tar.gz
@@ -67,3 +107,123 @@ secrethub_checksums:
     windows-386: sha256:0a5cceba50c83451a17b15c65977971f6ab9bafc9c14b44257abe3778451d982
     # https://github.com/secrethub/secrethub-cli/releases/download/v0.37.0/secrethub-v0.37.0-windows-amd64.zip
     windows-amd64: sha256:278abc0a2ed774221f39457b214ce3f166b60ada0d64633f303217c6e2137bbd
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-checksums.txt
+  v0.38.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:cd67d8112da5cbd9bc4d3a483e67f47c08f209ef9fceb19fa46007247e92d641
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-386.tar.gz
+    linux-386: sha256:d5fc347d44b9d41b1764e5ca078a05d2e495c81d0b090e8dd2008ab3cea03557
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-amd64.tar.gz
+    linux-amd64: sha256:e4afff9e97e15580a4510fb02e69dd0dad1637c1054286108c097a943bcbb695
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-arm64.tar.gz
+    linux-arm64: sha256:5c6c59fe6d1df57b13b27c3fc7054930b878bbe198ddc2bdaeb516f350560574
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-armv5.tar.gz
+    linux-armv5: sha256:bd60acdaef4af6978593d8d5b29950eb38caf523c441b463ba93bd66c26fa9fe
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-armv6.tar.gz
+    linux-armv6: sha256:f230e8a3e994d705dc01d7acb5f154adb4aa885b5ea5b64dfe172697d9e8ee82
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-linux-armv7.tar.gz
+    linux-armv7: sha256:0d55f623127765f9df51cf5c46059e7b0aaeb7b6e8f6941d1160ae75622404b3
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-windows-386.zip
+    windows-386: sha256:3fbe00eccc27c4d1559f7929fb9abc5546c1aac9da88ae93ca16d5f014c138df
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.38.0/secrethub-v0.38.0-windows-amd64.zip
+    windows-amd64: sha256:bcfcfcdc19e48c3f8d2a0b0d8a8a96f9904275abd5ab72b065ba1038e0ea32e9
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-checksums.txt
+  v0.39.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:9371fb2e6836fa6a6f179759c720810ef05e98a447c884c456e3000de11da4bd
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-386.tar.gz
+    linux-386: sha256:ac4caaded0f4cfd21229288e157b7078785bb03b545477d6d15bb2a118955e14
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-amd64.tar.gz
+    linux-amd64: sha256:086379891d76449f1dbf078c760dff7b7efb724ee2d045c3a7d789aae07de4d7
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-arm64.tar.gz
+    linux-arm64: sha256:bec74a9874fce6bcb6921a870dfe6944569f0c8d245000e179b5f44e8d980943
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-armv5.tar.gz
+    linux-armv5: sha256:2ea741db43b0b9b763e3034c57a998cfb5623452db736f0dc261ef3493bf0a7e
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-armv6.tar.gz
+    linux-armv6: sha256:53285502da1fce2f14a390c9e275883b649121c98b7196a5e74c5efd828a6b59
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-linux-armv7.tar.gz
+    linux-armv7: sha256:810687a9b42632ca53fca1cf6ef929cf83b21a4d967756586b13e713d3a038e3
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-windows-386.zip
+    windows-386: sha256:5d49f4326656b192fdce7e1df23ea260ab432c66184948d686a7cb7eddd43859
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.39.0/secrethub-v0.39.0-windows-amd64.zip
+    windows-amd64: sha256:6f5ca07046ecfcb983557fc8d3a947bbb55bc290aa6dcb5d07951eea093558ed
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-checksums.txt
+  v0.40.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:80f8b3774c55de41468d9cfe4427d4a3f6f83eabf90dd136f3502e383c4974d6
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-386.tar.gz
+    linux-386: sha256:cbba88f04c0f21dc3df8b4fdb06e7af302009a156633c67b60df8b718a42f2ce
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-amd64.tar.gz
+    linux-amd64: sha256:ff25393e276a8a3ee458560b0db0edfcc68df5cb280385801d5ecbd8434cf4fa
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-arm64.tar.gz
+    linux-arm64: sha256:419cf25e29e4b1552506c4a3ecd3c4908626535dcaaad323baf65aa50f927877
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-armv5.tar.gz
+    linux-armv5: sha256:2e2e21c49b71dfcf464749e7f85ec322bce8de3cf9db9aee121d2115b83e45c1
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-armv6.tar.gz
+    linux-armv6: sha256:8fff5ea425c8d82a3981f7917a1a9fc01b42231cf27ab6a0880621f392a46729
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-linux-armv7.tar.gz
+    linux-armv7: sha256:aec532cede7f2fbe68f46f171cacd080a571ee5f1081a5afb5ee15d433724ec9
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-windows-386.zip
+    windows-386: sha256:a8279af77705c37868b931f23faab1c6612fff7f88e8c09551530e50ced8f9fc
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.40.0/secrethub-v0.40.0-windows-amd64.zip
+    windows-amd64: sha256:2f546c975c76829afb1cd54305f61e7226e67e8df1d1cdfece3d70047d80f213
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-checksums.txt
+  v0.41.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:2707b4860a9d1be88c13a76e9e18db4120707c3d1ce7f4544fc08b23d29efb70
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-386.tar.gz
+    linux-386: sha256:03ab5ba530ec35ac1a81f772c41400c2fe515000562cc2272b4c79f8c7497df3
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-amd64.tar.gz
+    linux-amd64: sha256:58f6e54063e323219c4221c9c62dfe4168e57bf21e49d9346f2d31aa37f3ca90
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-arm64.tar.gz
+    linux-arm64: sha256:bc93bc09bd326caf966d3ee747c807468f40b0ba87184448935e666c206e2b5f
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-armv5.tar.gz
+    linux-armv5: sha256:1536d7a04989183d46510e52fb4da5723fb65f7353d712c50c3eef05b6c754c1
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-armv6.tar.gz
+    linux-armv6: sha256:92fa1ecb892e3b7853e1308f8476913abf5d093a5bac8f9c18fab82565d905a2
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-linux-armv7.tar.gz
+    linux-armv7: sha256:20495c73a2a561b7c5c889264ac9d8dca081bcc10c49d3f07bd93080e93673f4
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-windows-386.zip
+    windows-386: sha256:8450b9a6418249b281b5ad8caef44e8bd889b3e5b073d85054f4c50e0b577e74
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.41.0/secrethub-v0.41.0-windows-amd64.zip
+    windows-amd64: sha256:135eae92002d74de27b32c103c156c84d32d2c1f607c9d98a52781e243ecf44f
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-checksums.txt
+  v0.42.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:ab6aeac0da2af95435c17e0bc077512ff7e0456183690e8477b4d2d2d6074095
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-386.tar.gz
+    linux-386: sha256:d4cf7f2c64c4c6635d1e6645f4d75a8a5838b82b283fc3058c3afddc3c877842
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-amd64.tar.gz
+    linux-amd64: sha256:a8de5b34d2eb70472f290c51a97c66348bb8552945e5c2c81b9243ab2e86dc40
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-arm64.tar.gz
+    linux-arm64: sha256:d78d55eead36013f4ec1d2b972616307d2340de01ebc598d26001db53273b3ac
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-armv5.tar.gz
+    linux-armv5: sha256:1d0883be52912df401cd98c7e2320ebe312b75d808cb891f3fb39ebc1d53eb1b
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-armv6.tar.gz
+    linux-armv6: sha256:b87e22d498fb652b5cc66e8289a19024e573a6db76ff706cd104cccdbf816994
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-linux-armv7.tar.gz
+    linux-armv7: sha256:3e88e790202267788e432bcc80ef27b0cd6dec017fc111b29aa300f8d468098e
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-windows-386.zip
+    windows-386: sha256:479e36081794fbfa6b52fbf66f21496b355de00e8caff4bed76adecb04768b1c
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.42.0/secrethub-v0.42.0-windows-amd64.zip
+    windows-amd64: sha256:15013df5435020dfa7f3f556269fda42f90b05998f029a98d512ed1a841659f1
+  # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-checksums.txt
+  v0.43.0:
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-darwin-amd64.tar.gz
+    darwin-amd64: sha256:c71c64084dbad45ad33a1a65d1f2606e542ea8fe5070741a3908dfa880f92be8
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-386.tar.gz
+    linux-386: sha256:7802c07847504a953bdd031b437cdb5f332aeed7471a696de6247d5983796c65
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-amd64.tar.gz
+    linux-amd64: sha256:b9cf4b79c9220946d284eb87a77cc20f0470a80432b57df822568aed42aaf601
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-arm64.tar.gz
+    linux-arm64: sha256:7767a06f1e6cbbec7d31ae89543d9d8a17eb58e694b76c21b2e5f4b9b88049cd
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-armv5.tar.gz
+    linux-armv5: sha256:2b28d88cbc4ab6494aef9c6f5722c5215d8da5261941a917b0ad5ab8bc14663d
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-armv6.tar.gz
+    linux-armv6: sha256:92c474f90920e38011e3700419c6bbcd484b8d3f3cee398ee461c0c43ba976cd
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-linux-armv7.tar.gz
+    linux-armv7: sha256:8155cc7961c3cde9767f01bc5611270dc522f825ade4c9a49574966937e4bb1a
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-windows-386.zip
+    windows-386: sha256:76d7b09876ab364c8509c5a006a49b2f67e217471075a4dc13b33a029b7465f0
+    # https://github.com/secrethub/secrethub-cli/releases/download/v0.43.0/secrethub-v0.43.0-windows-amd64.zip
+    windows-amd64: sha256:2ac0231bf12bb62b880cf69e1643e48a21f2c89256bce50a9aa728c74d8ff25f
